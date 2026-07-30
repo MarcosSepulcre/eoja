@@ -40,7 +40,7 @@
 							fecha= publication_date.toLocaleString();
 							image_scr = image[i].getElementsByTagName('image:loc')[0].textContent; 
 
-							cadena = cadena + "<div class='col-12 col-md-6 noticia'><img src='" + image_scr + "' width='100%' alt='" + title + "'><br/><br/>";
+							cadena = cadena + "<div class='col-12 col-md-6 noticia'><img src='" + image_scr + "' class='img_galeria' alt='" + title + "'><br/><br/>";
 							cadena = cadena + "<em>Fecha de publicación: " + fecha + "</em><br/>"; 
 							cadena = cadena + "<b>" + title  + "</b><br/>"; 
 							cadena = cadena + "<p class='leer_mas'><a href='"+enlace+"' target='_blank'>Leer más</a></p></div>";
