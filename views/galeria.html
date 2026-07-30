@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+	<html lang="es">
+
+		<head>
+
+			<title>Galería de imágenes - Ejercicio obligatorio Módulo 7 Javascript Avanzado</title>
+			<meta  charset="utf-8">
+			<meta name="description" content="Galería de imágenes - Ejercicio obligatorio Módulo 7 Javascript Avanzado">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="icon" href="../images/punto-azul.png" type="image/png">
+
+			<!-- Añadimos bibliotecas de Bootstraap y archivo css-->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+			 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+			<link rel="stylesheet" href="../css/estilos.css">
+
+			<!-- Añadimos bibliotecas JQuery y archivo js -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type="text/javascript" src="../js/funciones.js"></script>
+
+		    <script type="text/javascript">
+
+				$(document).ready(function(){
+					setInterval(galeria_der, 2000);	
+				});
+
+		    </script>
+
+		</head>
+
+		<body>
+
+
+		<!-- MENÚ -->
+		<nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#"><img src="../images/logo-EOJA.png" class="logo"></a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav">
+		        <a class="nav-link"  href="../index.html">Inicio</a>
+		        <a class="nav-link active" href="galeria.html">Galería</a>
+		        <a class="nav-link" href="blog.html">Blog</a>
+		        <a class="nav-link" href="presupuesto.html">Presupuesto</a>
+		        <a class="nav-link" href="contacto.html">Contacto</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+
+	
+		<!-- CABECERA DE LA SECCIÓN -->
+		<div class="containerfluid cuerpo">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>Galería de imágenes - EoJA</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, risus in scelerisque aliquam, sapien sapien dapibus leo, ac efficitur nisl erat eget metus. Nullam finibus vitae tellus et auctor. Aenean consectetur sapien vel urna convallis scelerisque. In malesuada orci quis mauris gravida, quis imperdiet est vestibulum. Donec arcu sapien, porttitor at sodales quis, efficitur at justo. Morbi facilisis libero urna, sed pellentesque ante venenatis iaculis. Fusce in sapien a nulla vulputate pharetra. Donec pharetra id urna quis convallis.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, risus in scelerisque aliquam, sapien sapien dapibus leo, ac efficitur nisl erat eget metus. Nullam finibus vitae tellus et auctor. Aenean consectetur sapien vel urna convallis scelerisque. In malesuada orci quis mauris gravida, quis imperdiet est vestibulum. Donec arcu sapien, porttitor at sodales quis, efficitur at justo. Morbi facilisis libero urna, sed pellentesque ante venenatis iaculis. Fusce in sapien a nulla vulputate pharetra. Donec pharetra id urna quis convallis.</p>
+						</div>
+					</div>
+				</div>
+		</div>
+
+
+		<!-- GALERÍA DE FOTOS -->
+		<div class="containerfluid cuerpo">
+				<div class="container">
+					<div class="row">
+						<div class="col-12"><h2>Galería de imágenes:</h2></div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<img id="galeria_central" src="../images/home3.jpg" width="100%">
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-3 col-md-1 pt-3">
+							<img class="flecha" src="../images/izq.jpg" onclick="galeria_izq()" title="Anterior">
+						</div>
+						<div class="col-2 px-0 d-none d-md-block">
+							<img class="img_galeria" id="galeria1" src="../images/home1.jpg" title="Foto 1" style="opacity:0.2">
+							
+						</div>
+						<div class="col-2 px-0 d-none d-md-block">
+							<img class="img_galeria" id="galeria2" src="../images/home2.jpg" title="Foto 2" style="opacity:0.5">
+							
+						</div>
+						<div class="col-6 col-md-2 px-0">
+							<img class="img_galeria" id="galeria3" src="../images/home3.jpg" title="Foto 3" style="opacity:1">
+							
+						</div>
+						<div class="col-2 px-0 d-none d-md-block">
+							<img class="img_galeria" id="galeria4" src="../images/home4.jpg" title="Foto 4" style="opacity:0.5">
+							
+						</div>
+						<div class="col-2 px-0 d-none d-md-block">
+							<img class="img_galeria" id="galeria5" src="../images/home5.jpg" title="Foto 5" style="opacity:0.2">
+							
+						</div>
+						<div class="col-3 col-md-1 pt-3">
+							<img class="flecha" src="../images/der.jpg" onclick="galeria_der()" title="Siguiente">
+						</div>
+					</div>	
+				</div>
+		</div>
+
+
+		<!-- MÓDULO PATROCINADORES -->
+		<div class="containerfluid cuerpo">
+				<div class="container seccion">
+					<div class="row">
+						<div class="col-12"><h2>Patrocinadores:</h2></div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<ul id="patrocinadores">
+								<li class="col-2 pt-4 pt-md-0"><img id="izq" src="../images/izq.jpg" onclick="mover_izq()" alt="Anterior" title="Anterior"></li>
+								<li class="col-4 col-md-2"><img id="patrocinador1" src="../images/logo1.jpg"></li>
+								<li class="col-4 col-md-2"><img id="patrocinador2" src="../images/logo2.jpg"></li>
+								<li class="col-2 d-none d-md-block"><img id="patrocinador3" src="../images/logo3.jpg"></li>
+								<li class="col-2 d-none d-md-block"><img id="patrocinador4" src="../images/logo4.jpg"></li>
+								<li class="col-2 pt-4 pt-md-0"><img id="der" src="../images/der.jpg" onclick="mover_der()" alt="Siguiente" title="Siguiente"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- PIE DE LA WEB -->
+		<div class="containerfluid footer bg-dark"  data-bs-theme="dark">
+			<div class="container">
+				<div class="row">
+					<div class="row">
+	        	<div class="col-12 text-center">
+	        			<p>Síguenos en redes sociales</p>
+	        			<p>
+	        				<a href="#" title="Facebook" target="blank"><i class="fa-brands fa-facebook icono-redes" title="Síguenos en Facebook"></i></a>
+									<a href="#" title="X" target="blank"><i class="fa-brands fa-x-twitter icono-redes" title="Síguenos en X"></i></a>
+									<a href="#" title="Instagram" target="blank"><i class="fa-brands fa-instagram icono-redes" title="Síguenos en Instagram"></i></a>
+								</p>
+						</div>
+					</div>
+	        <div class="row">
+	        	<div class="col-12 text-center">
+	        			EoJA - Pl. Ruperto Chapí, s/n, 03001 Alacant, Alicante - 
+	        			<a href="mailto:info@eoja.com" class="enlace_pie">info@eoja.com</a> - <a href="tel:676767676" class="enlace_pie">676 767 676</a>
+	        			<br> <a href="#" class="enlace_pie">Aviso Legal</a> - <a href="#" class="enlace_pie">Política de Privacidad</a>  
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+	</body>
+</html>

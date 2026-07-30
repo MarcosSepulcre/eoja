@@ -1,0 +1,185 @@
+/* Estilos generales de la página */
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Helvetica', sans-serif;	
+}
+
+
+.cuerpo{
+	width: 100%;
+	margin-top: 85px;
+}
+.noticia{
+	float: left;
+	margin: 20px 0 0 0;
+	border-bottom: 2px solid #000;
+}
+.logo{
+	height: 30px;
+}
+.punto{
+	cursor: pointer;
+	height: 15px;
+}
+.img_galeria{
+	width: 100%;
+}
+.flecha{
+	cursor: pointer;
+	width: 100%;
+}
+.informacion{
+	size: 10px;
+	font-style: italic;
+}
+h1{
+	font-family: Rubik;
+	font-size: 2.5em;
+	text-align: center;
+	color: #0082A7;
+	margin: 0 0 20px 0;
+}
+h2{
+	font-family: Rubik;
+	font-size: 2em;
+	color: #0082A7;
+	margin: 10px 0;
+}
+h3{
+	font-family: Rubik;
+	font-size: 1.8em;
+	color: #0082A7;
+}
+h4{
+	font-family: Rubik;
+	font-size: 1.5em;
+	margin: 15px 0 0 0;
+}
+
+a.enlace_pie{
+	text-decoration: none;
+	color: #FFF;
+}
+a.enlace_pie:hover{
+	text-decoration: underline;
+	color: #0082A7;
+}
+
+
+ul#patrocinadores{
+	list-style: none;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul#patrocinadores li{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+ul#patrocinadores li img{
+	width: 100%;
+}
+
+#izq, #der{
+	cursor: pointer;
+}
+
+
+
+/* Estilos del módulo y página blog */
+
+.leer_mas{
+	text-align: right;
+	padding: 0 10px 0 0;
+}
+.leer_mas a{
+	text-decoration: none;
+	color: #000;
+}
+.leer_mas a:hover{
+	text-decoration: underline;
+	color: #0082A7;
+}
+
+
+/* 	Estilos de la página presupuesto */
+
+.presupuesto{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.presupuesto li{
+	margin: 5px 0 0 0;
+}
+.presupuesto li p{
+	font-style: italic;
+}
+input.checkboxClass{
+	width: 20px;
+}
+.importePresupuesto{
+	font-size: 17px;
+    font-weight: bold;
+    text-align: right;
+}
+a.enlace_politica{
+	text-decoration: none;
+	color: #000;
+}
+a.enlace_politica:hover{
+	text-decoration: underline;
+	color: #0082A7;
+}
+
+
+
+/* 	Estilos de la página contacto */
+
+
+.icono-contacto{
+	font-size: 25px;
+	color: #0082A7;
+	margin: 0 20px  0 0;
+}
+.enviar{
+	margin: 0;
+	padding: 5px 10px;
+	cursor: pointer;
+	color: #FFF;
+	background-color: #0082A7;
+	border: 2px solid #0082A7;
+	border-radius: 3px;
+}
+.enviar:hover{
+	background-color: #FFF;
+	color: #0082A7;
+}
+
+
+
+
+/* 	Estilos del footer */
+
+.footer{
+	width: 100%;
+	margin: 50px 0 0 0;
+	padding: 20px;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+}
+.icono-redes{
+	font-size: 30px;
+	color: #FFF;
+}
+.icono-redes:hover{
+	color: #0082A7;
+}
