@@ -17,9 +17,9 @@
 
 			<!-- Añadimos bibliotecas JQuery y archivo js -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script type="text/javascript" src="../js/funciones.js"></script>
+			<script src="../js/funciones.js"></script>
 
-		    <script type="text/javascript">
+		    <script>
 
 				$(document).ready(function(){
 					setInterval(galeria_der, 2000);	
@@ -35,7 +35,7 @@
 		<!-- MENÚ -->
 		<nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="../index.html"><img src="../images/logo-EOJA.png" class="logo"></a>
+		    <a class="navbar-brand" href="../index.html"><img src="../images/logo-EOJA.png" class="logo" alt="EoJA - Ejercicio obligatorio Javascript Avanzado"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
@@ -78,35 +78,35 @@
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<img id="galeria_central" src="../images/home3.jpg" width="100%">
+							<img id="galeria_central" class="img_galeria" src="../images/home3.jpg">
 						</div>
 					</div>
 					<div class="row mt-2">
 						<div class="col-3 col-md-1 pt-3">
-							<img class="flecha" src="../images/izq.jpg" onclick="galeria_izq()" title="Anterior">
+							<img class="flecha" src="../images/izq.jpg" onclick="galeria_izq()" title="Anterior" alt="Anterior">
 						</div>
 						<div class="col-2 px-0 d-none d-md-block">
-							<img class="img_galeria" id="galeria1" src="../images/home1.jpg" title="Foto 1" style="opacity:0.2">
+							<img class="img_galeria" id="galeria1" src="../images/home1.jpg" title="Foto 1" alt="Foto 1" style="opacity:0.2">
 							
 						</div>
 						<div class="col-2 px-0 d-none d-md-block">
-							<img class="img_galeria" id="galeria2" src="../images/home2.jpg" title="Foto 2" style="opacity:0.5">
+							<img class="img_galeria" id="galeria2" src="../images/home2.jpg" title="Foto 2" alt="Foto 2" style="opacity:0.5">
 							
 						</div>
 						<div class="col-6 col-md-2 px-0">
-							<img class="img_galeria" id="galeria3" src="../images/home3.jpg" title="Foto 3" style="opacity:1">
+							<img class="img_galeria" id="galeria3" src="../images/home3.jpg" title="Foto 3" alt="Foto 3" style="opacity:1">
 							
 						</div>
 						<div class="col-2 px-0 d-none d-md-block">
-							<img class="img_galeria" id="galeria4" src="../images/home4.jpg" title="Foto 4" style="opacity:0.5">
+							<img class="img_galeria" id="galeria4" src="../images/home4.jpg" title="Foto 4" alt="Foto 4" style="opacity:0.5">
 							
 						</div>
 						<div class="col-2 px-0 d-none d-md-block">
-							<img class="img_galeria" id="galeria5" src="../images/home5.jpg" title="Foto 5" style="opacity:0.2">
+							<img class="img_galeria" id="galeria5" src="../images/home5.jpg" title="Foto 5" alt="Foto 5" style="opacity:0.2">
 							
 						</div>
 						<div class="col-3 col-md-1 pt-3">
-							<img class="flecha" src="../images/der.jpg" onclick="galeria_der()" title="Siguiente">
+							<img class="flecha" src="../images/der.jpg" onclick="galeria_der()" title="Siguiente" alt="Siguiente">
 						</div>
 					</div>	
 				</div>
@@ -123,10 +123,10 @@
 						<div class="col-12">
 							<ul id="patrocinadores">
 								<li class="col-2 pt-4 pt-md-0"><img id="izq" src="../images/izq.jpg" onclick="mover_izq()" alt="Anterior" title="Anterior"></li>
-								<li class="col-4 col-md-2"><img id="patrocinador1" src="../images/logo1.jpg"></li>
-								<li class="col-4 col-md-2"><img id="patrocinador2" src="../images/logo2.jpg"></li>
-								<li class="col-2 d-none d-md-block"><img id="patrocinador3" src="../images/logo3.jpg"></li>
-								<li class="col-2 d-none d-md-block"><img id="patrocinador4" src="../images/logo4.jpg"></li>
+								<li class="col-4 col-md-2"><img id="patrocinador1" src="../images/logo1.jpg" alt="Patrocinador 1"></li>
+								<li class="col-4 col-md-2"><img id="patrocinador2" src="../images/logo2.jpg" alt="Patrocinador 2"></li>
+								<li class="col-2 d-none d-md-block"><img id="patrocinador3" src="../images/logo3.jpg" alt="Patrocinador 1"></li>
+								<li class="col-2 d-none d-md-block"><img id="patrocinador4" src="../images/logo4.jpg" alt="Patrocinador 1"></li>
 								<li class="col-2 pt-4 pt-md-0"><img id="der" src="../images/der.jpg" onclick="mover_der()" alt="Siguiente" title="Siguiente"></li>
 							</ul>
 						</div>
@@ -143,9 +143,9 @@
 	        			<p>Síguenos en redes sociales</p>
 	        			<p>
 	        				<a href="#" title="Facebook" target="blank"><i class="fa-brands fa-facebook icono-redes" title="Síguenos en Facebook"></i></a>
-									<a href="#" title="X" target="blank"><i class="fa-brands fa-x-twitter icono-redes" title="Síguenos en X"></i></a>
-									<a href="#" title="Instagram" target="blank"><i class="fa-brands fa-instagram icono-redes" title="Síguenos en Instagram"></i></a>
-								</p>
+							<a href="#" title="X" target="blank"><i class="fa-brands fa-x-twitter icono-redes" title="Síguenos en X"></i></a>
+							<a href="#" title="Instagram" target="blank"><i class="fa-brands fa-instagram icono-redes" title="Síguenos en Instagram"></i></a>
+						</p>
 						</div>
 					</div>
 	        <div class="row">
