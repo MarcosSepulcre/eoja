@@ -17,9 +17,9 @@
 
 			<!-- Añadimos bibliotecas JQuery y archivo js -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script type="text/javascript" src="js/funciones.js"></script>
+			<script src="js/funciones.js"></script>
 
-	    <script type="text/javascript">
+	    <script>
 
 			$(document).ready(function(){
 					cargar("home"); 
@@ -36,7 +36,7 @@
 		<!-- MENÚ -->
 		<nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="index.html"><img src="images/logo-EOJA.png" class="logo"></a>
+		    <a class="navbar-brand" href="index.html"><img src="images/logo-EOJA.png" class="logo" alt="EoJA - Ejercicio obligatorio Javascript Avanzado"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
@@ -79,17 +79,17 @@
 					</div>
 					<div class="row">
 						<div class="col-12">
-								<img id="imagen_carrusel" src="images/home1.jpg" width="100%">
+								<img id="imagen_carrusel" class="img_galeria" src="images/home1.jpg" alt="Imagen central carrusel">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-12 text-center">
-								<img id="punto1" class="punto" src="images/punto-azul.png" onclick="cambia_foto('1')" title="Foto 1">
-								<img id="punto2" class="punto" src="images/punto-gris.png" onclick="cambia_foto('2')" title="Foto 2">
-								<img id="punto3" class="punto" src="images/punto-gris.png" onclick="cambia_foto('3')" title="Foto 3">
-								<img id="punto4" class="punto" src="images/punto-gris.png" onclick="cambia_foto('4')" title="Foto 4">
-								<img id="punto5" class="punto" src="images/punto-gris.png" onclick="cambia_foto('5')" title="Foto 5">
-								<img id="punto6" class="punto" src="images/punto-gris.png" onclick="cambia_foto('6')" title="Foto 6">
+								<img id="punto1" class="punto" src="images/punto-azul.png" onclick="cambia_foto('1')" alt="Foto 1">
+								<img id="punto2" class="punto" src="images/punto-gris.png" onclick="cambia_foto('2')" alt="Foto 2">
+								<img id="punto3" class="punto" src="images/punto-gris.png" onclick="cambia_foto('3')" alt="Foto 3">
+								<img id="punto4" class="punto" src="images/punto-gris.png" onclick="cambia_foto('4')" alt="Foto 4">
+								<img id="punto5" class="punto" src="images/punto-gris.png" onclick="cambia_foto('5')" alt="Foto 5">
+								<img id="punto6" class="punto" src="images/punto-gris.png" onclick="cambia_foto('6')" alt="Foto 6">
 						</div>
 					</div>					
 				</div>
@@ -117,10 +117,10 @@
 						<div class="col-12">
 							<ul id="patrocinadores">
 								<li class="col-2 pt-4 pt-md-0"><img id="izq" src="images/izq.jpg" onclick="mover_izq()" alt="Anterior" title="Anterior"></li>
-								<li class="col-4 col-md-2"><img id="patrocinador1" src="images/logo1.jpg"></li>
-								<li class="col-4 col-md-2"><img id="patrocinador2" src="images/logo2.jpg"></li>
-								<li class="col-2 d-none d-md-block"><img id="patrocinador3" src="images/logo3.jpg"></li>
-								<li class="col-2 d-none d-md-block"><img id="patrocinador4" src="images/logo4.jpg"></li>
+								<li class="col-4 col-md-2"><img id="patrocinador1" src="images/logo1.jpg" alt="Patrocinador 1"></li>
+								<li class="col-4 col-md-2"><img id="patrocinador2" src="images/logo2.jpg" alt="Patrocinador 2"></li>
+								<li class="col-2 d-none d-md-block"><img id="patrocinador3" src="images/logo3.jpg" alt="Patrocinador 1"></li>
+								<li class="col-2 d-none d-md-block"><img id="patrocinador4" src="images/logo4.jpg" alt="Patrocinador 1"></li>
 								<li class="col-2 pt-4 pt-md-0"><img id="der" src="images/der.jpg" onclick="mover_der()" alt="Siguiente" title="Siguiente"></li>
 							</ul>
 						</div>
