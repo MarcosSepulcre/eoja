@@ -141,12 +141,12 @@
 
 				if(error==1){
 					$("#resultado_formulario").html("Formulario no enviado. Por favor, corrija los errores.");
-					$("#privacidad").removeClass("color_verde");
+					$("#resultado_formulario").removeClass("color_verde");
 					$("#resultado_formulario").addClass("color_rojo");
 					return false;
 				}else{
 					$("#resultado_formulario").html("Felicidades! Formulario rellenado correctamente!");
-					$("#privacidad").removeClass("color_rojo");
+					$("#resultado_formulario").removeClass("color_rojo");
 					$("#resultado_formulario").addClass("color_verde");
 					return false;
 				}
