@@ -171,6 +171,7 @@
 
 				plazo=$("#plazo").val();
 
+
 				if(producto1) presupuesto+=1200;
 				if(producto2) presupuesto+=1600;
 				if(producto3) presupuesto+=2400;
@@ -202,9 +203,8 @@
 				  currency: 'EUR'
 				}).format(total);
 
-
-				$("presupuesto").html(presupuestoEuro+"<br>"+descuentoEuro+"<br>"+totalEuro);
-				$("titulo_presupuesto").html("Subtotal:<br> Descuento ("+porcentajeDescuento+"%): <br>Total");
+				$("#presupuesto").html(presupuestoEuro+"<br>"+descuentoEuro+"<br>"+totalEuro);
+				$("#titulo_presupuesto").html("Subtotal:<br> Descuento ("+porcentajeDescuento+"%): <br>Total");
 
 		}
 
